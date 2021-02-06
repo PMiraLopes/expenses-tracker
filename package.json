@@ -29,9 +29,9 @@
   },
   "scripts": {
     "start": "craco start",
-    "start:lambda": "netlify-lambda serve src/lambda",
+    "start:lambda": "netlify-lambda serve src/functions",
     "build": "craco build",
-    "build:lambda": "netlify-lambda build src/lambda",
+    "build:lambda": "netlify-lambda build src/functions",
     "test": "craco test"
   },
   "eslintConfig": {
