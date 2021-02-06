@@ -18,5 +18,5 @@
     "baseUrl": "src",
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["__mocks__", "src", "*.config.js"]
+  "include": ["__mocks__", "src", "*.config.js", "postcss.config.ts"]
 }
