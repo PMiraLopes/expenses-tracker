@@ -1,9 +1,10 @@
-import React, {Suspense} from 'react';
-import { Route, Router, Switch } from 'react-router-dom'
-import {createBrowserHistory} from 'history'
-import './App.css';
+import { createBrowserHistory } from 'history';
+import React, { Suspense } from 'react';
+import { Route, Router, Switch } from 'react-router-dom';
 
-import { routes } from './routes'
+import { routes } from './routes';
+
+import './App.css';
 
 const history = createBrowserHistory()
 
@@ -13,14 +14,14 @@ function App() {
       <Suspense fallback={'Loading...'}>
         <Router history={history}>
           <Switch>
-          {routes.map(route => {
-            return <Route key={String(route.path || route.key)} {...route}></Route>
-          })}
+            {routes.map(route => {
+              return <Route key={String(route.path || route.key)} {...route}></Route>
+            })}
           </Switch>
         </Router>
       </Suspense>
     </main>
-  );
+  )
 }
 
 export default App;
