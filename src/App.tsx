@@ -6,12 +6,18 @@ import { routes } from './routes';
 import i18n from './i18n'
 import './styles/index.scss';
 
+import CircularProgress from '@material-ui/core/CircularProgress'
+
 const history = createBrowserHistory()
 
 function App() {
   return (
     <div>
-      <Suspense fallback={'Loading...'}>
+      <Suspense fallback={
+        <div className='flex justify-center items-center w-screen h-screen'>
+          <CircularProgress />
+        </div>
+      }>
         <Router history={history}>
           <I18nextProvider i18n={i18n}>
             <Switch>
