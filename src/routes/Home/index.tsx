@@ -1,5 +1,4 @@
 import { useHistory } from 'react-router-dom'
-import classNames from 'classnames'
 import { useTranslation } from 'react-i18next'
 import Button from '@material-ui/core/Button'
 import Box from '@material-ui/core/Box'
